@@ -1,0 +1,8 @@
+{
+    "workbench.editor.enablePreview": true,
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "workbench.startupEditor": "none",
+    "terminal.integrated.tabs.enabled": false
+}
