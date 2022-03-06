@@ -13,3 +13,6 @@ tasks:
 ports:
   - port: 9042
     onOpen: ignore  
+github:
+  prebuilds:
+    main: true
