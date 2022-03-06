@@ -1,0 +1,13 @@
+tasks:
+  - name: install-cqlsh
+    init: |
+      pip install -U cqlsh
+  - name: install-cassandra
+    init: |
+      docker pull cassandra:4
+    command: | 
+      echo "Wait for Cassandra to start..."
+      docker run -p 9042:9042 -d cassandra:4
+      gp await-port 9042
+      echo "Ready, let's roll!"
+ 
