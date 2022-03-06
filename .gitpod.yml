@@ -10,4 +10,6 @@ tasks:
       docker run -p 9042:9042 -d cassandra:4
       gp await-port 9042
       echo "Ready, let's roll!"
- 
+ports:
+  - port: 9042
+    onOpen: ignore  
