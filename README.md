@@ -4,7 +4,7 @@
 
 Blablabla
 
-[Connect using `cqlsh`](vscode://aleks.katapod/command/cqlsh)
+[Connect using cqlsh](vscode://aleks.katapod/command/cqlsh)
 
 Blablabla
 
