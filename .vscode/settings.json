@@ -4,7 +4,7 @@
         "*.md": "vscode.markdown.preview.editor"
     },
     "workbench.startupEditor": "readme",
-    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.tabs.enabled": true,
     "workbench.statusBar.visible": false,
     "workbench.panel.defaultLocation": "right",
     "workbench.panel.opensMaximized": "never",

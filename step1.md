@@ -1,12 +1,14 @@
 # Step I
 
+Welcome!
+
+At first, connect using cqlsh!
+
+[![describe](https://dummyimage.com/150x30/000/fff.png&text=cqlsh)](vscode://aleks.katapod/command/cqlsh)
+
 Blablabla
 
-[Connect using cqlsh](vscode://aleks.katapod/command/cqlsh)
-
-Blablabla
-
-[![describe](https://dummyimage.com/150x30/000/fff.png&text=describe)](vscode://aleks.katapod/command/describe)
+[![describe](https://dummyimage.com/150x30/000/fff.png&text=describe)](vscode://aleks.katapod/command/describe_keyspaces;)
 
 Blablabla
 
