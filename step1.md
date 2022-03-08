@@ -10,4 +10,4 @@ Blablabla
 
 Blablabla
 
-[![describe](https://dummyimage.com/150x30/000/fff.png&text=next+step)](./step2.md)
+[![next step](https://dummyimage.com/150x30/000/fff.png&text=next+step)](./step2.md)
