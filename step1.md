@@ -4,7 +4,9 @@ Welcome!
 
 At first, connect using cqlsh!
 
-[![describe](https://dummyimage.com/150x30/000/fff.png&text=cqlsh)](command:katapod.sendText)
+<a style="cursor: pointer;text-decoration: none;" href="command:katapod.sendText?%5B%7B%22command%22%3A%22cqlsh%22%7D%5D">
+<pre><code>cqlsh</code></pre>
+</a>
 
 Hey Cédrick, sure we can have PlantUML :) 
 
@@ -26,8 +28,10 @@ graph TD;
     C-->D;
 ```
 
-[![describe](https://dummyimage.com/150x30/000/fff.png&text=describe)](vscode://aleks.katapod/command/describe_keyspaces;)
+<a style="cursor: pointer;text-decoration: none;" href="command:katapod.sendText?%5B%7B%22command%22%3A%22describe%20keyspaces%3B%22%7D%5D">
+<pre><code>describe keyspaces;</code></pre>
+</a>
 
 Blablabla
 
-[![next step](https://dummyimage.com/150x30/000/fff.png&text=next+step)](./step2.md)
+[![next step](https://dummyimage.com/150x30/000/fff.png&text=next+step)](command:katapod.loadPage?%5B%7B%22step%22%3A%22step2%22%7D%5D )
