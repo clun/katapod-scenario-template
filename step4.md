@@ -2,7 +2,7 @@
 
 # Try It Out: Cassandra Query Language (CQL)
 
-### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?%5B%7B%22step%22%3A%22step3%22%7D%5D">◂</a> Step 3 of 7 <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?%5B%7B%22step%22%3A%22step5%22%7D%5D">▸</a>
+### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step3">◂</a> Step 3 of 7
 
 </div>
 
@@ -23,3 +23,13 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+## Iframe Demo
+
+<iframe style="width: 100%;" height=400px src="https://30f05387-fcfe-49ee-a2c0-c23e97fb3c30-europe-west1.apps.astra.datastax.com/api/rest/swagger-ui/" title="Astra Swagger"></iframe>
+
+## Video Demo
+
+At the moment the video feature is very limited, just a clickable picture that opens the video in a new tab in a browser :(
+
+[![CQL Console in Astra](https://img.youtube.com/vi/K2dRSHgjrW4/0.jpg)](https://www.youtube.com/watch?v=K2dRSHgjrW4){target="_blank"}

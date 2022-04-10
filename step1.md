@@ -15,4 +15,4 @@ In this scenario, you will learn the essential CQL commands to effectively write
 
 This scenario is also available on our [datastax.com/dev](https://datastax.com/dev) site, where you can find many more resources to help you succeed with Apache Cassandra™.
 
-<a style="display: block;cursor: pointer;text-decoration: none; color: white; background-color: rgb(253, 119, 0); vertical-align: middle; text-align: middle; padding: 20px; width: 100%;" href="command:katapod.loadPage?%5B%7B%22step%22%3A%22step2%22%7D%5D">START SCENARIO</a> 
+[start scenario](command:katapod.loadPage?step2){.orange_bar}
