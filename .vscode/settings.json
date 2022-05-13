@@ -9,5 +9,6 @@
     "workbench.editor.showTabs": false,
     "breadcrumbs.enabled": false,
     "zenMode.fullScreen": false,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "update.mode": "none"
 }
