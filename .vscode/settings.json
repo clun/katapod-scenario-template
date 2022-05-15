@@ -11,6 +11,7 @@
     "zenMode.fullScreen": false,
     "workbench.startupEditor": "none",
     "update.mode": "none",
+    "extensions.autoUpdate": false,
     "customizeUI.stylesheet": {
         ".tabs-breadcrumbs": "display: none !important",
         ".notifications-toasts": "display: none !important"
