@@ -10,5 +10,9 @@
     "breadcrumbs.enabled": false,
     "zenMode.fullScreen": false,
     "workbench.startupEditor": "none",
-    "update.mode": "none"
+    "update.mode": "none",
+    "customizeUI.stylesheet": {
+        ".tabs-breadcrumbs": "display: none !important",
+        ".notifications-toasts": "display: none !important"
+    }
 }
