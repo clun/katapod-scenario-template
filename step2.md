@@ -2,7 +2,7 @@
 
 # Try It Out: Cassandra Query Language (CQL)
 
-### Step 1 of 7 <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step3">▸</a>
+### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?intro">◂</a> Step 1 of 7 <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step2">▸</a>
 
 </div>
 
