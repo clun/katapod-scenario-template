@@ -46,7 +46,7 @@ INSERT INTO users (lastname, firstname, email) VALUES ('Polson', 'Lino', 'lino@e
 **ProTip:** *Additionally, if you have a CSV file, you can make use of the `COPY` command to insert data. Give it a try:*
 
 ```
-COPY demo.users (lastname, firstname, email) FROM '~/users.csv' WITH HEADER = TRUE;
+COPY demo.users (lastname, firstname, email) FROM 'users.csv' WITH HEADER = TRUE;
 ```
 ---
 
