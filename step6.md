@@ -16,7 +16,9 @@ SELECT * FROM users WHERE lastname = 'Polson';
 
 Say this user has  recently changed their `email` address. Their information will need to be updated in the table.
 
-```UPDATE users SET email = 'lpolson@example.com'  WHERE lastname = 'Polson';```
+```
+UPDATE users SET email = 'lpolson@example.com'  WHERE lastname = 'Polson';
+```
 
 `UPDATE` writes one or more column values to a row in a table.
 
