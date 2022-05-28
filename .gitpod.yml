@@ -6,7 +6,6 @@ tasks:
     init: |
       docker pull cassandra:4
     command: | 
-      gp open step1.md
       echo "Wait for Cassandra to start..."
       docker run -p 9042:9042 -d cassandra:4
       gp await-port 9042
