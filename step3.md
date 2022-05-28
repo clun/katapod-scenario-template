@@ -1,21 +1,19 @@
-<div style="width:100%; padding: 40px 0 20px 20px; background-color: rgb(28, 131, 165); color: white;">
+<div class="top">
 
 # Try It Out: Cassandra Query Language (CQL)
-
-### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step2">◂</a> Step 2 of 7 <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step4">▸</a>
-
+### [◂](command:katapod.loadPage?step2){.steps} Step 3 of 7 [▸](command:katapod.loadPage?step4){.steps}
 </div>
 
-# Describe Keyspaces
+# Create a table
 
-Now let's try to get the list of the keyspaces:
+Next, let's create a `users` table in your `demo` keyspace.
 
 ```
-DESCRIBE KEYSPACES;
+CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text);
 ```
 
-Here you can see all of keyspaces that have been created in the Cassandra cluster. Cassandra automatically creates keyspaces that have names starting with `system` and uses these as the data dictionary for the cluster.
+A table is a database object that stores your data and is defined by a schema. It consists of named columns and data is stored in rows. Tables have a `PRIMARY KEY` column, which is extremely important in regards to data modeling because the `PRIMARY KEY` uniquely identifies each row.
 
-*Awesome, you know how to see all your keyspaces!*
+**The schema is ready, it is time to insert user data!**
 
 [continue](command:katapod.loadPage?step4){.orange_bar}

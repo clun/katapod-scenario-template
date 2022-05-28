@@ -1,20 +1,40 @@
-<div style="width:100%; padding: 40px 0 20px 20px; background-color: rgb(28, 131, 165); color: white;">
+<div class="top">
 
-# Welcome!
-
-## Try It Out: Cassandra Query Language (CQL)
-
+# Try It Out: Cassandra Query Language (CQL)
+### [◂](command:katapod.loadPage?intro){.steps} Step 1 of 7 [▸](command:katapod.loadPage?step2){.steps}
 </div>
 
-* **Difficulty**: Beginner 
-* **Estimated Time**: 5 minutes
+# Connect
 
-**Cassandra Query Language (CQL)** looks like SQL because you can put data in tables containing rows and columns. So if you come from a SQL background, these terms (tables, rows and columns) have the same definition that they have in SQL. Isn't that helpful?
+First things first, we have to connect to the database. For that we will use a console client called `cqlsh` (Cassandra Query Language Shell). For the locally installed Cassandra with default settings we can connect as simple as that:
 
-In this scenario, you will learn the essential CQL commands to effectively write and read data to Apache Cassandra, using the included `cqlsh` tool.
+```
+cqlsh
+```
 
-This scenario is also available on our [datastax.com/dev](https://datastax.com/dev) site, where you can find many more resources to help you succeed with Apache Cassandra™.
+# Create a keyspace
 
-**IMPORTANT**: you run this scenario using DataStax Katapod platform, which is beta at the moment. For any kind of questions, issue reports or anything other please contact our team using [email](mailto:aleksandr.volochnev@datastax.com) or [linkedin](https://dtsx.io/aleks).
+Let's first start learning CQL by creating a keyspace, using the `CREATE KEYSPACE` command.
 
-[start scenario](command:katapod.loadPage?step2){.orange_bar}
+```
+CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+```
+
+A keyspace is a way to logically group a collection of database objects together, such as:
+
+* tables
+* user-defined types
+* user-defined functions
+* and more!
+
+---
+*ProTip:* You can use the `Tab` key in `cqlsh` to auto-complete or suggest the next part of your command, as you type.
+---
+
+This is similar concept to the database or namespace used in relational databases.
+
+In addition, the keyspace also controls the replication behavior for all of the data stored in the keyspace.
+
+*Great, you now know how to create a keyspace in Apache Cassandra!*
+
+[continue](command:katapod.loadPage?step2){.orange_bar}

@@ -1,42 +1,19 @@
-<div style="width:100%; padding: 40px 0 20px 20px; background-color: rgb(28, 131, 165); color: white;">
+<div class="top">
 
 # Try It Out: Cassandra Query Language (CQL)
-
-### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?intro">◂</a> Step 1 of 7 <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step2">▸</a>
-
+### [◂](command:katapod.loadPage?step1){.steps} Step 2 of 7 [▸](command:katapod.loadPage?step3){.steps}
 </div>
 
-# Connect
+# Describe Keyspaces
 
-First things first, we have to connect to the database. For that we will use a console client called `cqlsh` (Cassandra Query Language Shell). For the locally installed Cassandra with default settings we can connect as simple as that:
-
-```
-cqlsh
-```
-
-# Create a keyspace
-
-Let's first start learning CQL by creating a keyspace, using the `CREATE KEYSPACE` command.
+Now let's try to get the list of the keyspaces:
 
 ```
-CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+DESCRIBE KEYSPACES;
 ```
 
-A keyspace is a way to logically group a collection of database objects together, such as:
+Here you can see all of keyspaces that have been created in the Cassandra cluster. Cassandra automatically creates keyspaces that have names starting with `system` and uses these as the data dictionary for the cluster.
 
-* tables
-* user-defined types
-* user-defined functions
-* and more!
-
----
-*ProTip:* You can use the `Tab` key in `cqlsh` to auto-complete or suggest the next part of your command, as you type.
----
-
-This is similar concept to the database or namespace used in relational databases.
-
-In addition, the keyspace also controls the replication behavior for all of the data stored in the keyspace.
-
-*Great, you now know how to create a keyspace in Apache Cassandra!*
+*Awesome, you know how to see all your keyspaces!*
 
 [continue](command:katapod.loadPage?step3){.orange_bar}

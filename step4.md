@@ -1,35 +1,55 @@
-<div style="width:100%; padding: 40px 0 20px 20px; background-color: rgb(28, 131, 165); color: white;">
+<div class="top">
 
 # Try It Out: Cassandra Query Language (CQL)
-
-### <a style="color: white; text-decoration: none;" href="command:katapod.loadPage?step3">◂</a> Step 3 of 7
-
+### [◂](command:katapod.loadPage?step3){.steps} Step 4 of 7 [▸](command:katapod.loadPage?step5){.steps}
 </div>
 
-# Demo
+# Let's load some data
 
-## PlantUML Demo 
+Let's first select the keyspace we want to use: 
 
-```plantuml
-Bob -> Alice : hello
+```
+USE demo;
 ```
 
-## Mermaid Demo
+Now we have this keyspace preselected and don't have to mention it in each and every command.
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+Inserting columns and column values programmatically is more practical than using `cqlsh` in a production database. Using the SQL-like shell makes testing queries very convenient.
+
+| lastname | firstname | email |
+| :---: | :---:   | :---: |
+| Round | Craig |craig@example.com |
+| Pratico | Cassi | cassi@example.com |
+| Polson | Lino | lino@example.com |  
+
+To insert some simple rows of data into the table `demo.users`, use the `INSERT` command. Insert 3 records of user data into the table. 
+
+*Reminder*: To execute the commands, you can:
+
+1. Just click on them,
+2. Type them manually, OR
+3. Copy-paste, whatever you prefer.
+
+```
+INSERT INTO users (lastname, firstname, email) VALUES ('Round', 'Craig', 'craig@example.com');
 ```
 
-## Iframe Demo
+```
+INSERT INTO users (lastname, firstname, email) VALUES ('Pratico', 'Cassi', 'cassi@example.com');
+```
 
-<iframe style="width: 100%;" height=400px src="https://30f05387-fcfe-49ee-a2c0-c23e97fb3c30-europe-west1.apps.astra.datastax.com/api/rest/swagger-ui/" title="Astra Swagger"></iframe>
+```
+INSERT INTO users (lastname, firstname, email) VALUES ('Polson', 'Lino', 'lino@example.com');
+```
 
-## Video Demo
+---
+**ProTip:** *Additionally, if you have a CSV file, you can make use of the `COPY` command to insert data. Give it a try:*
 
-At the moment the video feature is very limited, just a clickable picture that opens the video in a new tab in a browser :(
+```
+COPY demo.users (lastname, firstname, email) FROM '~/users.csv' WITH HEADER = TRUE;
+```
+---
 
-[![CQL Console in Astra](https://img.youtube.com/vi/K2dRSHgjrW4/0.jpg)](https://www.youtube.com/watch?v=K2dRSHgjrW4){target="_blank"}
+**Nice job! You have filled your table with rows of data.**
+
+[continue](command:katapod.loadPage?step5){.orange_bar}
