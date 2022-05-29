@@ -6,7 +6,6 @@ tasks:
     init: |
       docker pull cassandra:4
     command: | 
-      gp open step1.md
       echo "Wait for Cassandra to start..."
       docker run -p 9042:9042 -d cassandra:4
       gp await-port 9042
@@ -19,5 +18,4 @@ github:
     main: true
 vscode:
   extensions:
-    - https://github.com/HadesArchitect/katapod/releases/download/0.2.0/katapod-0.2.0.vsix
-    - iocave.customize-ui
+    - https://github.com/HadesArchitect/katapod/releases/download/0.2.3/katapod-0.2.3.vsix
