@@ -1,7 +1,7 @@
 <div class="top">
 
 # Try It Out: Cassandra Query Language (CQL)
-### [◂](command:katapod.loadPage?step4){.steps} Scenario Completed
+### [◂](command:katapod.loadPage?step7){.steps} Scenario Completed
 </div>
 
 # Scenario Completed!
