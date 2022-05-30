@@ -9,11 +9,5 @@
     "workbench.editor.showTabs": false,
     "breadcrumbs.enabled": false,
     "zenMode.fullScreen": false,
-    "workbench.startupEditor": "none",
-    "update.mode": "none",
-    "extensions.autoUpdate": false,
-    "customizeUI.stylesheet": {
-        ".tabs-breadcrumbs": "display: none !important",
-        ".notifications-toasts": "display: none !important"
-    }
+    "workbench.startupEditor": "none"
 }

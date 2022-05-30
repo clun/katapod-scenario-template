@@ -2,7 +2,7 @@
 
 [![Open in KataPod](https://gitpod.io/button/open-in-gitpod.svg)](https://katapod.datastaxtraining.com/#https://github.com/HadesArchitect/GitpodTest/)
 
-By default it always opens `step1.md` file.
+By default it always opens `intro.md` file.
 
 ## How to add "Next Step" link
 
