@@ -1,21 +1,44 @@
-# Gitpod Test
+# Katapod
 
-[![Open in KataPod](https://gitpod.io/button/open-in-gitpod.svg)](https://katapod.datastaxtraining.com/#https://github.com/HadesArchitect/GitpodTest/)
+[![Open in KataPod](https://gitpod.io/button/open-in-gitpod.svg)](https://katapod.datastaxtraining.com/#https://github.com/clun/katapod-scenario-template/)
 
-By default it always opens `intro.md` file.
 
-## How to add "Next Step" link
-
+Scenario for the use to pick the destination platform:
 ```
-[start scenario](command:katapod.loadPage?step2){.orange_bar}
+start-scenario.sh
 ```
 
-Replace `step2` with the name of the step you need, matching the markdown file name. Omit the extension as we support only MD for now
+### Work in progress
 
-## How to paste "Execute the code" code block 
+```
 
-Just like that:
+ ██████╗  █████╗ ████████╗ █████╗ ███████╗████████╗ █████╗ ██╗  ██╗ 
+ ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗╚██╗██╔╝ 
+ ██║  ██║███████║   ██║   ███████║███████╗   ██║   ███████║ ╚███╔╝  
+ ██║  ██║██╔══██║   ██║   ██╔══██║╚════██║   ██║   ██╔══██║ ██╔██╗  
+ ██████╔╝██║  ██║   ██║   ██║  ██║███████║   ██║   ██║  ██║██╔╝ ██╗ 
+ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ 
 
-    ```
-    cqlsh
-    ```
+You can run this scenario using different Apache Cassandra™ 
+
+(1) - Astra DB (Free Cloud service)
+(2) - Local Cassandra (Docker)
+
+Choose an option (1 or 2) :
+```
+
+#### If using Astra 
+
+- Asking for a token
+- Creating db `cassandra fundamentals` if needed (parameter of the script)
+- Creating keyspace `scenario_demo` if needed (parameter of the script)
+- Download the cloud securebundle
+- Show CqlSH for Astra Prompt
+
+#### If using Cassandra 
+
+- Start Cassandra
+- Install pip cqlsh
+- Show CqlSH
+
+
